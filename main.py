@@ -12,11 +12,11 @@ api = Api(app)
 
 class Notify(Resource):
   def post(self):
-      apiNotifyMsg = request.data
+      apiNotifyMsg = request.args['message']
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
       scrollphathdcustom.scrollMsg(" ")
 
 api.add_resource(Notify, '/notify')
 
 if __name__ == '__main__':
-     app.run(host='0.0.0.0',port='5002')
+     app.run(host='0.0.0.0',port='80')
