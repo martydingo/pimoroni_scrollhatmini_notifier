@@ -10,7 +10,7 @@ app = Flask(__name__)
 api = Api(app)
 
 class Notify(Resource):
-  def post(Resource):
+  def post(self, apiNotifyMsg):
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
 
 api.add_resource(Notify, '/notify/<apiNotifyMsg>')
