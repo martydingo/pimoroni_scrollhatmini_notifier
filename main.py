@@ -19,7 +19,7 @@ class Clear(Resource):
       scrollphathd.clear()
 
 
-api.add_resource(Notify, '/notify/<apiNotifyMsg>')
+api.add_resource(Notify, '/notify/notify/<apiNotifyMsg>')
 api.add_resource(Clear, '/notify/clear')
 
 if __name__ == '__main__':
