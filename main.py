@@ -15,7 +15,7 @@ class Notify(Resource):
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
       scrollphathdcustom.scrollMsg(" ")
 
-api.add_resource(Notify, '/notify/notify/<apiNotifyMsg>')
+api.add_resource(Notify, '/notify/<apiNotifyMsg>')
 
 if __name__ == '__main__':
      app.run(host='0.0.0.0',port='5002')
