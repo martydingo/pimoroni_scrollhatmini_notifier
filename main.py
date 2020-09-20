@@ -13,7 +13,7 @@ api = Api(app)
 class Notify(Resource):
   def post(self, apiNotifyMsg):
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
-
+      scrollphathdcustom.scrollMsg(" ")
 class Clear(Resource):
   def post(self):
       scrollphathd.clear()
