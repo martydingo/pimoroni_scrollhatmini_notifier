@@ -9,7 +9,7 @@ scrollphathd.set_brightness(0.2)
 app = Flask(__name__)
 api = Api(app)
 
-class Notifiy(Resource):
+class Notify(Resource):
   def post(Resource):
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
 
