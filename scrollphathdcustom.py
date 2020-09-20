@@ -20,3 +20,4 @@ def scrollMsg(message):
         time.sleep(0.02)                         # Delay for each scrolling step
 
     time.sleep(0.5)                              # Delay at the end of scrolling
+    scrollphathd.clear()

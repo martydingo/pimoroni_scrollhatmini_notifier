@@ -13,8 +13,6 @@ api = Api(app)
 class Notify(Resource):
   def post(self, apiNotifyMsg):
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
-      time.sleep(1)
-      scrollphathd.clear()
 
 
 api.add_resource(Notify, '/notify/<apiNotifyMsg>')
