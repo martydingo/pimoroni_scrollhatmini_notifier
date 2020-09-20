@@ -14,8 +14,13 @@ class Notify(Resource):
   def post(self, apiNotifyMsg):
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
 
+class Clear(Resource):
+  def post(self):
+      scrollphathd.clear()
+
 
 api.add_resource(Notify, '/notify/<apiNotifyMsg>')
+api.add_resource(Clear, '/notify/clear')
 
 if __name__ == '__main__':
      app.run(port='5002')
