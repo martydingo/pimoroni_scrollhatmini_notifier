@@ -11,7 +11,7 @@ app = Flask(__name__)
 api = Api(app)
 
 class Notify(Resource):
-  def post(self):
+  def get(self):
       apiNotifyMsg = request.args['message']
       scrollphathdcustom.scrollMsg(apiNotifyMsg)
       scrollphathdcustom.scrollMsg(" ")
